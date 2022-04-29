@@ -12,6 +12,12 @@ let rl = readline.createInterface({
 
 rl.on('line', (input) => {
     let roles = input.split(" ");
-    console.log(deleteUserRole(roles));
+    let str = deleteUserRole(roles);
+    for (let i = 0; i < str.length; i++) {
+        str[i] = `'${str[i]}'`;
+    }
+    str = str.toString();
+    str = str.replace(",", ", ");
+    console.log("[" + str + "]");
     rl.close();
 });
