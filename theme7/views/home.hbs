@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="header-container">
+        <h1 class="mainHeader">Van Darkholme</h1>
+    </div>
+</header>
+
+<section class="image">
+    <div class="image-container">
+        <img src="img/icon.png" alt="icon">
+    </div>
+</section>
+
+<section id="links">
+    <h2 class="sectionText">Links</h2>
+    <ul>
+        {{#each links}}
+            <li><a href="{{link}}" target="_blank">{{platform}}</a></li>
+        {{/each}}
+        <!--<li><a href="https://www.twitch.tv/vansamaofficial" target="_blank">Twitch channel</a></li>
+        <li><a href="https://www.instagram.com/vansamaofficial/" target="_blank">Instagram</a></li>
+        <li><a href="https://linktr.ee/vansamaofficial" target="_blank">Linktree</a></li>-->
+    </ul>
+</section>
